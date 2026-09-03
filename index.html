@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ready Steady Go Coffee | Glasgow</title>
+  <meta name="description" content="Ready Steady Go Coffee. Coffee. Running. Community. Glasgow — 2027.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #f4f0e6;
+      color: #4b3328;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .coming-soon {
+      min-height: 100vh;
+      padding: 5vw 7vw 3vw;
+      display: grid;
+      grid-template-columns: 1fr 1.25fr;
+      grid-template-rows: auto 1fr auto;
+      gap: 20px;
+    }
+
+    .brand {
+      align-self: start;
+    }
+
+    .brand h1 {
+      font-size: clamp(3rem, 5vw, 6rem);
+      line-height: 1.05;
+      font-weight: 900;
+      letter-spacing: -0.05em;
+    }
+
+    .brand h1 span {
+      display: block;
+      margin-bottom: 0.25em;
+    }
+
+    .tagline {
+      color: #315e4b;
+      margin-top: 30px;
+      font-size: clamp(1rem, 1.5vw, 1.8rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+    }
+
+    .announcement {
+      text-align: right;
+    }
+
+    .announcement h2 {
+      color: #cf7953;
+      font-size: clamp(4rem, 8vw, 10rem);
+      line-height: 0.85;
+      font-weight: 900;
+      letter-spacing: -0.06em;
+    }
+
+    .route-area {
+      grid-column: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 300px;
+    }
+
+    .route-placeholder {
+      width: min(90%, 700px);
+      aspect-ratio: 1.7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #315e4b;
+      border: 3px dashed #315e4b;
+      border-radius: 20px;
+      font-weight: 800;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .footer {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: end;
+      gap: 20px;
+      font-size: clamp(0.9rem, 1.4vw, 1.5rem);
+      font-weight: 800;
+    }
+
+    .instagram {
+      color: #4b3328;
+      text-decoration: none;
+    }
+
+    .instagram:hover {
+      color: #cf7953;
+    }
+
+    .stats {
+      color: #315e4b;
+      text-align: center;
+    }
+
+    .location {
+      text-align: right;
+    }
+
+    @media (max-width: 800px) {
+      .coming-soon {
+        padding: 40px 25px 25px;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      .brand h1 {
+        font-size: 3.5rem;
+      }
+
+      .tagline {
+        margin-top: 20px;
+      }
+
+      .announcement {
+        text-align: left;
+        margin-top: 50px;
+      }
+
+      .announcement h2 {
+        font-size: clamp(4rem, 20vw, 7rem);
+      }
+
+      .route-area {
+        width: 100%;
+        flex: 1;
+        min-height: 250px;
+      }
+
+      .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 30px;
+      }
+
+      .stats,
+      .location {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="coming-soon">
+
+    <section class="brand">
+      <h1>
+        <span>READY</span>
+        <span>STEADY</span>
+        <span>GO!</span>
+      </h1>
+
+      <p class="tagline">COFFEE. RUNNING. COMMUNITY.</p>
+    </section>
+
+    <section class="announcement">
+      <h2>COMING<br>SOON.</h2>
+    </section>
+
+    <section class="route-area">
+      <div class="route-placeholder">
+        YOUR RSG ROUTE GOES HERE
+      </div>
+    </section>
+
+    <footer class="footer">
+
+      <a
+        class="instagram"
+        href="https://www.instagram.com/readysteadygocoffee/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        @readysteadygocoffee
+      </a>
+
+      <p class="stats">5.51 KM · 33:44 · 6:07 /KM</p>
+
+      <p class="location">GLASGOW — 2027</p>
+
+    </footer>
+
+  </main>
+
+</body>
+</html>
